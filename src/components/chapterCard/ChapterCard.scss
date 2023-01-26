@@ -1,0 +1,26 @@
+@import "../../main.scss";
+
+.chapter-card {
+  width: 29rem;
+  height: 29rem;
+  border: 1px solid $border-color;
+  border-radius: 1rem;
+  cursor: pointer;
+
+  .image {
+    width: 100%;
+  }
+
+  .description {
+    padding: 2rem 1rem;
+
+    .title {
+      font-weight: 700;
+      font-size: 2rem;
+      line-height: 2.5rem;
+    }
+    .desc {
+      font-size: 1.5rem;
+    }
+  }
+}

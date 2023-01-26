@@ -1,0 +1,61 @@
+@import "../../main.scss";
+
+.header {
+  width: 85vw;
+  height: 9rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid $border-color;
+
+  .search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: $background-gray;
+    width: 62rem;
+    height: 4.5rem;
+    border-radius: 1rem;
+    img {
+      margin-right: 1rem;
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+
+    input {
+      background: $background-gray;
+      border: none;
+      margin-right: 1rem;
+      width: 80%;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+    left: 4rem;
+
+    .desc {
+      .name {
+        font-size: 1.5rem;
+      }
+      .role {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: $font-gray-dark;
+      }
+    }
+
+    .icon {
+      margin-right: 2rem;
+    }
+  }
+}

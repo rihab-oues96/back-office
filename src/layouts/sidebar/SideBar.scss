@@ -1,0 +1,72 @@
+@import "../../main.scss";
+
+.sidebar {
+  width: 15vw;
+  min-height: 100vh;
+  border-left: 1px solid $border-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .head {
+    margin: 3rem 0;
+    .logo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .title {
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
+
+      p {
+        font-size: 1rem;
+        font-weight: 600;
+        text-align: center;
+      }
+    }
+  }
+
+  .navigation {
+    margin-top: 3rem;
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    a.active {
+      color: $primary-color;
+      img {
+        filter: invert(38%) sepia(90%) saturate(4054%) hue-rotate(213deg)
+          brightness(98%) contrast(92%);
+      }
+    }
+
+    .link {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin: 3rem 0;
+
+      &:hover {
+        color: $primary-color;
+        img {
+          filter: invert(38%) sepia(90%) saturate(4054%) hue-rotate(213deg)
+            brightness(98%) contrast(92%);
+        }
+      }
+
+      img {
+        width: 3rem;
+      }
+
+      p {
+        font-size: 2.2rem;
+        margin-right: 2.5rem;
+      }
+    }
+  }
+}

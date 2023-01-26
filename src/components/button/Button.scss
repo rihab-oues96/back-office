@@ -1,0 +1,17 @@
+@import "../../main.scss";
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $primary-color;
+  cursor: pointer;
+  width: 18rem;
+  height: 5rem;
+  border-radius: 1rem;
+
+  .btn-p {
+    color: white;
+    font-size: 1.5rem;
+  }
+}
