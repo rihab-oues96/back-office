@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Tajawal);
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -8,6 +8,10 @@
 html {
   font-size: 62.5%;
   font-family: Tajawal, sans-serif;
+}
+
+a {
+  text-decoration: none;
 }
 
 $primary-color: #2e6ff1;

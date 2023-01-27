@@ -1,10 +1,13 @@
 import React from "react";
+import { openModal } from "../../features/modal/ModalSlice";
+import { useDispatch } from "react-redux";
 import "./Button.scss";
 
-const Button = ({ content, toggleModal }) => {
+const Button = ({ content }) => {
+  const dispatch = useDispatch();
   return (
-    <div className="btn" onClick={toggleModal}>
-      <p className="btn-p">{content}</p>
+    <div className="button" onClick={() => dispatch(openModal())}>
+      <p className="button-content">{content}</p>
     </div>
   );
 };

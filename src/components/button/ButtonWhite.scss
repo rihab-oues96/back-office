@@ -1,17 +1,19 @@
 @import "../../main.scss";
 
-.button {
+.btn-white {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: $primary-color;
+  background-color: white;
+  border: 1px solid $border-color;
   cursor: pointer;
   width: 18rem;
   height: 5rem;
   border-radius: 1rem;
+  margin-left: 2rem;
 
-  .button-content {
-    color: white;
+  .btn-content {
+    color: black;
     font-size: 1.5rem;
     font-weight: 500;
   }

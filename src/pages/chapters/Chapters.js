@@ -1,23 +1,21 @@
-import React, { useState } from "react";
+import React from "react";
 import Button from "../../components/button/Button";
 import ChapterCard from "../../components/chapterCard/ChapterCard";
+import Modal from "../../components/modal/Modal";
+import { chapters } from "../../data";
+import { useSelector } from "react-redux";
+
 import "./Chapters.scss";
 
-import { chapters } from "../../data";
-import Modal from "../../components/modal/Modal";
-
 const Chapters = () => {
-  const [openModal, setOpenModal] = useState(false);
+  const { isOpenModal } = useSelector((store) => store.modal);
 
-  const toggleModal = () => {
-    setOpenModal(!openModal);
-  };
   return (
     <section className="chapters">
-      {openModal && <Modal toggleModal={toggleModal} />}
+      {isOpenModal && <Modal form="chapter" />}
       <div className="heading">
         <p className="title">الفصول</p>
-        <Button content="أضف فصل جديد" toggleModal={toggleModal} />
+        <Button content="أضف فصل جديد" />
       </div>
 
       <div className="chapters-cards">

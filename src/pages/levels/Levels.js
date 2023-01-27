@@ -2,9 +2,9 @@ import React from 'react';
 
 const Levels = () => {
     return (
-        <div>
+        <h1>
             levels
-        </div>
+        </h1>
     );
 };
 
