@@ -1,0 +1,159 @@
+@import "../../main.scss";
+
+.new-exercice {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 3fr 1fr;
+
+  .choice {
+    border-left: 1px solid $border-color;
+    padding: 4rem 2rem 0 2rem;
+
+    .title {
+      font-size: 2.4rem;
+      font-weight: 700;
+      margin-bottom: 3rem;
+    }
+
+    .search-bloc {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      width: 35rem;
+      margin-bottom: 2rem;
+
+      .search {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background: $background-gray;
+        width: 30rem;
+        height: 4.5rem;
+        border-radius: 1rem;
+
+        img {
+          margin-right: 1rem;
+          width: 2.5rem;
+          height: 2.5rem;
+        }
+        input {
+          background: $background-gray;
+          border: none;
+          margin-right: 1rem;
+          font-size: 1.5rem;
+          width: 80%;
+
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+
+      .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: $background-gray;
+        cursor: pointer;
+        border-radius: 1rem;
+        width: 4.5rem;
+        height: 4.5rem;
+      }
+    }
+
+    .exercice-cards {
+      height: 60rem;
+      overflow-y: scroll;
+    }
+  }
+
+  .display-exercice {
+    border-left: 1px solid $border-color;
+
+    .heading {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      border-bottom: 1px solid $border-color;
+      padding: 3rem 2rem 2rem 2rem;
+
+      .title {
+        font-size: 2.5rem;
+        font-weight: 600;
+
+        span {
+          font-weight: 400;
+
+          img {
+            margin-right: 1rem;
+          }
+        }
+      }
+    }
+
+    .content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 6rem;
+
+      .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        background: $background-gray;
+        border-radius: 1rem;
+        width: 30rem;
+        height: 5rem;
+
+        .view {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          width: 50%;
+          height: 100%;
+          p {
+            font-size: 1.8rem;
+            font-weight: 500;
+            color: $font-gray-light;
+          }
+          img {
+            margin-right: 5px;
+            filter: invert(74%) sepia(0%) saturate(175%) hue-rotate(236deg)
+              brightness(97%) contrast(103%);
+          }
+          &:active {
+            background: $primary-color;
+            p {
+              color: white;
+            }
+            img {
+              filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg)
+                brightness(102%) contrast(102%);
+            }
+          }
+        }
+        .mobile-view {
+          border-top-right-radius: 1rem;
+          border-bottom-right-radius: 1rem;
+        }
+        .web-view {
+          border-top-left-radius: 1rem;
+          border-bottom-left-radius: 1rem;
+        }
+      }
+    }
+  }
+
+  .regulations {
+    padding: 4rem 2rem;
+    .title {
+      font-size: 2.4rem;
+      font-weight: 700;
+      margin-bottom: 3rem;
+    }
+  }
+}

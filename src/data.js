@@ -16,6 +16,21 @@ import lesson6 from "./assets/images/lesson6.png";
 import ex1 from "./assets/images/ex1.png";
 import ex2 from "./assets/images/ex2.png";
 
+import advice from "./assets/icons/advice.png";
+import description from "./assets/icons/description.png";
+import dialogue from "./assets/icons/dialogue.png";
+import image from "./assets/icons/image.png";
+import linkCards from "./assets/icons/linkCards.png";
+import menu from "./assets/icons/menu.png";
+import question from "./assets/icons/question.png";
+import range from "./assets/icons/range.png";
+import rightWord from "./assets/icons/right-word.png";
+import sound from "./assets/icons/sound.png";
+import text from "./assets/icons/text.png";
+import Type from "./assets/icons/type.png";
+import video from "./assets/icons/video.png";
+
+
 export const chapters = [
   {
     image: im1,
@@ -98,5 +113,73 @@ export const exercices = [
     image: ex2,
     title: "صحيحة أو خاطئة",
     description: "إجراء محادثة",
+  },
+];
+
+export const questionsItems = [
+  {
+    image: advice,
+    title: "النصيحة",
+    description: "ضع حاوية الصورة",
+  },
+  {
+    image: description,
+    title: "وصف",
+    description: "ضع حاوية الصورة",
+  },
+  {
+    image: dialogue,
+    title: "حوار",
+    description: "ضع حاوية الصورة",
+  },
+  {
+    image: image,
+    title: "صورة",
+    description: "ضع حاوية الصورة",
+  },
+  {
+    image: linkCards,
+    title: "توصيل البطاقات",
+    description: "ضع حاوية الصورة",
+  },
+  {
+    image: menu,
+    title: "التأكيد الصحيح",
+    description: "ضع حاوية الصورة",
+  },
+  {
+    image: question,
+    title: "سؤال",
+    description: "ضع حاوية الصورة",
+  },
+  {
+    image: range,
+    title: "الترتيب",
+    description: "ضع حاوية الصورة",
+  },
+  {
+    image: rightWord,
+    title: "الكلمة الصحيح",
+    description: "ضع حاوية الصورة",
+  },
+  {
+    image: sound,
+    title: "صوت",
+    description: "ضع حاوية الصورة",
+  },
+  {
+    image: text,
+    title: "نص",
+    description: "ضع حاوية الصورة",
+  },
+  {
+    image: Type,
+    title: "املا الفراغ",
+    description: "ضع حاوية الصورة",
+  },
+  {
+    image: video,
+    title: "فيديو",
+    description: "ضع حاوية الصورة",
   },
 ];

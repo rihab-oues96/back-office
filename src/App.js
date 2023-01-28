@@ -6,9 +6,9 @@ import Users from "./pages/users/Users";
 import Settings from "./pages/settings/Settings";
 import Header from "./layouts/header/Header";
 import SideBar from "./layouts/sidebar/SideBar";
-
-import "./App.scss";
 import Lesson from "./pages/lesson/Lesson";
+import AddNewExercice from "./components/addNewExercice/AddNewExercice";
+import "./App.scss";
 
 function App() {
   return (
@@ -22,6 +22,10 @@ function App() {
             <Route path="/lessons" element={<Lessons />} />
 
             <Route path="lessons/lesson" element={<Lesson />} />
+            <Route
+              path="lessons/lesson/newExercice"
+              element={<AddNewExercice />}
+            />
 
             <Route path="levels" element={<Levels />} />
             <Route path="users" element={<Users />} />

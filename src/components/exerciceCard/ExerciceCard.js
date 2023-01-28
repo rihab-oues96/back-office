@@ -2,8 +2,8 @@ import React from "react";
 import ButtonWhite from "../button/ButtonWhite";
 import points from "../../assets/icons/points.png";
 import "./ExerciceCard.scss";
-const ExerciceCard = ({ exercice }) => {
-  console.log();
+
+const ExerciceCard = ({ qestion, displayButton }) => {
   return (
     <div className="exercice-card ">
       <div className="card-right">
@@ -11,18 +11,20 @@ const ExerciceCard = ({ exercice }) => {
           <img src={points} alt="icon-points" />
         </div>
         <div className="image">
-          <img src={exercice.image} alt="image" />
+          <img src={qestion.image} alt="image" />
         </div>
 
         <div className="about-card">
-          <p className="title"> {exercice.title} </p>
-          <p className="description"> {exercice.description}</p>
+          <p className="title"> {qestion.title} </p>
+          <p className="description"> {qestion.description}</p>
         </div>
       </div>
 
-      <div className="card-left">
-        <ButtonWhite content="افتح المنشئ" />
-      </div>
+      {displayButton && (
+        <div className="card-left">
+          <ButtonWhite content="افتح المنشئ" />
+        </div>
+      )}
     </div>
   );
 };

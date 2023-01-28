@@ -5,6 +5,7 @@ import ExerciceCard from "../../components/exerciceCard/ExerciceCard";
 import "./Lesson.scss";
 
 import { exercices } from "../../data";
+import { Link } from "react-router-dom";
 
 const Lesson = () => {
   return (
@@ -16,7 +17,9 @@ const Lesson = () => {
         </p>
         <div className="btns">
           <ButtonWhite content="تعديل" />
-          <Button content="أضف تمرين جديد" />
+          <Link to="/lessons/lesson/newExercice">
+            <Button content="أضف تمرين جديد" />
+          </Link>
         </div>
       </div>
 
@@ -32,7 +35,11 @@ const Lesson = () => {
                 <tr>
                   <th className="index">#0{index + 1}</th>
                   <th>
-                    <ExerciceCard key={index} exercice={exercice} />
+                    <ExerciceCard
+                      key={index}
+                      qestion={exercice}
+                      displayButton={true}
+                    />
                   </th>
                 </tr>
               </table>
