@@ -80,31 +80,37 @@ export const chapters = [
 
 export const lessons = [
   {
+    id: uuidv4(),
     image: lesson1,
     title: "الدرس 1 : أساسيات السفر ",
     description: "تعّلم بعض المفردات والعبارات الأساسية",
   },
   {
+    id: uuidv4(),
     image: lesson2,
     title: "الدرس 2: أنا هنا في عطلة",
     description: "إجراء محادثة",
   },
   {
+    id: uuidv4(),
     image: lesson3,
     title: "الدرس 3: التجول",
     description: "تعلم عبارات و مفردات تساعدك على التجوال",
   },
   {
+    id: uuidv4(),
     image: lesson4,
     title: "الدرس 4: كيف ُيمكُنني إلغاء تذكرتي / بطاقتي؟",
     description: "شراء تذكرٍة للنقل",
   },
   {
+    id: uuidv4(),
     image: lesson5,
     title: "الدرس 6: أساسيات السفر",
     description: "تعّلم بعض المفردات والعبارات الأساسية",
   },
   {
+    id: uuidv4(),
     image: lesson6,
     title: "الدرس 7: أساسيات السفر",
     description: "تعّلم بعض المفردات والعبارات الأساسية",
@@ -113,11 +119,13 @@ export const lessons = [
 
 export const exercices = [
   {
+    id: uuidv4(),
     image: ex1,
     title: "نصيحة",
     description: "تعّلم بعض المفردات والعبارات الأساسية",
   },
   {
+    id: uuidv4(),
     image: ex2,
     title: "صحيحة أو خاطئة",
     description: "إجراء محادثة",
@@ -126,77 +134,91 @@ export const exercices = [
 
 export const questionsItems = [
   {
+    id: uuidv4(),
     name: "exerciceAdvice",
     image: advice,
     title: "النصيحة",
     description: "ضع حاوية الصورة",
   },
   {
+    id: uuidv4(),
+    id: uuidv4(),
     name: "exerciceDescription",
     image: description,
     title: "وصف",
     description: "ضع حاوية الصورة",
   },
   {
+    id: uuidv4(),
     name: "exerciceDialogue",
     image: dialogue,
     title: "حوار",
     description: "ضع حاوية الصورة",
   },
   {
+    id: uuidv4(),
     name: "exerciceImage",
     image: image,
     title: "صورة",
     description: "ضع حاوية الصورة",
   },
   {
+    id: uuidv4(),
     name: "exerciceLinkCards",
     image: linkCards,
     title: "توصيل البطاقات",
     description: "ضع حاوية الصورة",
   },
   {
+    id: uuidv4(),
     name: "exerciceQuestionCheck",
     image: menu,
     title: "التأكيد الصحيح",
     description: "ضع حاوية الصورة",
   },
   {
+    id: uuidv4(),
     name: "exerciceQuestion",
     image: question,
     title: "سؤال",
     description: "ضع حاوية الصورة",
   },
   {
+    id: uuidv4(),
     image: range,
     title: "الترتيب",
     description: "ضع حاوية الصورة",
   },
   {
+    id: uuidv4(),
     name: "exerciceWrongRight",
     image: rightWord,
     title: "الكلمة الصحيح",
     description: "ضع حاوية الصورة",
   },
   {
+    id: uuidv4(),
     name: "exerciceVoice",
     image: sound,
     title: "صوت",
     description: "ضع حاوية الصورة",
   },
   {
+    id: uuidv4(),
     name: "exerciceText",
     image: text,
     title: "نص",
     description: "ضع حاوية الصورة",
   },
   {
+    id: uuidv4(),
     name: "exerciceAddAnswer",
     image: Type,
     title: "املا الفراغ",
     description: "ضع حاوية الصورة",
   },
   {
+    id: uuidv4(),
     name: "exerciceVideo",
     image: video,
     title: "فيديو",

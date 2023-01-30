@@ -73,15 +73,12 @@ const AddNewExercice = () => {
       <div className="regulations">
         <p className="title">ضوابط</p>
         <div className="exercices">
-          {name === "exerciceAdvice" && <ExerciceQuestion />}
+          {name === "exerciceQuestion" && <ExerciceQuestion />}
           {name === "exerciceDescription" && <ExerciceDescription />}
           {name === "exerciceText" && <ExerciceText />}
-
-          {/* <ExerciceImage />
-          <ExerciceVideo />
-          <ExerciceWrongRight />
-        
-           */}
+          {name === "exerciceImage" && <ExerciceImage />}
+          {name === "exerciceVideo" && <ExerciceVideo />}
+          {name === "exerciceWrongRight" && <ExerciceWrongRight />}
         </div>
       </div>
     </section>

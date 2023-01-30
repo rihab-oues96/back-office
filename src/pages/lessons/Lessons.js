@@ -2,13 +2,14 @@ import React from "react";
 import Modal from "../../components/modal/Modal";
 import Button from "../../components/button/Button";
 import ButtonWhite from "../../components/button/ButtonWhite";
-import { lessons } from "../../data";
+// import { lessons } from "../../data";
 import { useSelector } from "react-redux";
 import LessonCard from "../../components/lessonCard/LessonCard";
 import "./Lessons.scss";
 
 const Lessons = () => {
   const { isOpenModal } = useSelector((store) => store.modal);
+  const { lessons } = useSelector((store) => store.lesson);
   return (
     <section className="lessons">
       <div className="heading">

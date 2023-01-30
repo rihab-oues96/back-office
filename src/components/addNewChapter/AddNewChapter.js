@@ -30,7 +30,7 @@ const AddNewChapter = () => {
       description: chapter.description,
     };
     dispatch(addChapter(newChapter));
-    
+
     dispatch(closeModal());
   };
 

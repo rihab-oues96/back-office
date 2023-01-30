@@ -21,7 +21,6 @@ const Chapters = () => {
 
       <div className="chapters-cards">
         {chapters.map((chapter, index) => {
-          console.log(chapters);
           return <ChapterCard chapter={chapter} key={index} />;
         })}
       </div>

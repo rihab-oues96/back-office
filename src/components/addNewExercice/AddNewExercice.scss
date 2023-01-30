@@ -3,7 +3,7 @@
 .new-exercice {
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
 
   .choice {
     border-left: 1px solid $border-color;
@@ -159,8 +159,6 @@
     .exercices {
       display: flex;
       flex-direction: column;
-      overflow-y: scroll;
-      height: 65rem;
       gap: 2rem;
     }
   }
