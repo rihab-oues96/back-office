@@ -6,7 +6,10 @@
   border: 1px solid $border-color;
   border-radius: 0.5rem;
   cursor: pointer;
-
+  img {
+    width: 29rem;
+    height: 18.5rem;
+  }
   .image {
     width: 100%;
   }

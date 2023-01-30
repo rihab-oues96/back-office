@@ -43,19 +43,24 @@ const AddNewChapter = () => {
 
       <div className="imports">
         <div className="import-img">
-          <label for="inputImg">
-            <img src={plus} alt="icon-plus" />
+          <label htmlFor="inputImg">
+            <img src={chapter.image || plus} alt="icon-plus" className="plus"/>
           </label>
           <input
             type="file"
             id="inputImg"
             accept="image/png,image/jpeg"
-            value={chapter.image}
-            onChange={(e) => setChapter({ ...chapter, image: e.target.value })}
+            onChange={(e) => {
+              if (e.target.files && e.target.files[0])
+                setChapter({
+                  ...chapter,
+                  image: URL.createObjectURL(e.target.files[0]),
+                });
+            }}
           />
         </div>
         <div className="import-file">
-          <label className="btn-file" for="inputFile">
+          <label className="btn-file" htmlFor="inputFile">
             اختر ملف
           </label>
           <input type="file" id="inputFile" />
