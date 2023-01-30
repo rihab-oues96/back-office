@@ -1,0 +1,39 @@
+@import "../../main.scss";
+
+.exercice-title-card {
+  border: 1px solid $border-color;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+  width: 35rem;
+  height: 10rem;
+  padding-right: 2rem;
+  gap: 1.5rem;
+
+  .icon-question {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $border-color;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+  }
+
+  .about-exercice-card {
+    text-align: right;
+
+    .title-card {
+      margin-bottom: 0.5rem;
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+    .description-card {
+      font-size: 1.5rem;
+      font-weight: 400;
+    }
+  }
+}

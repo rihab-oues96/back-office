@@ -3,7 +3,7 @@ import ButtonWhite from "../button/ButtonWhite";
 import points from "../../assets/icons/points.png";
 import "./ExerciceCard.scss";
 
-const ExerciceCard = ({ qestion, displayButton }) => {
+const ExerciceCard = ({ qestion }) => {
   return (
     <div className="exercice-card ">
       <div className="card-right">
@@ -20,11 +20,9 @@ const ExerciceCard = ({ qestion, displayButton }) => {
         </div>
       </div>
 
-      {displayButton && (
-        <div className="card-left">
-          <ButtonWhite content="افتح المنشئ" />
-        </div>
-      )}
+      <div className="card-left">
+        <ButtonWhite content="افتح المنشئ" />
+      </div>
     </div>
   );
 };

@@ -1,0 +1,91 @@
+@import "../../../main.scss";
+
+.wrong-right-exercice {
+  display: flex;
+  flex-direction: column;
+
+  .wrong-right-heading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    p {
+      font-size: 1.8rem;
+      font-weight: 500;
+      margin: 0 1rem;
+      color: $font-gray-light;
+    }
+  }
+  .dash {
+    width: 2rem;
+    height: 1px;
+    background-color: $primary-color;
+  }
+  .wrong-right-content {
+    border-right: 1px solid $primary-color;
+    padding-right: 2rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+      margin: 1rem 0;
+
+      li {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        border: 1px solid $border-color;
+        width: 15rem;
+        height: 5rem;
+        gap: 1rem;
+        border-radius: 1rem;
+        padding-right: 1rem;
+        font-size: 1.6rem;
+        font-weight: 500;
+
+        .circle {
+          border: 1px solid $border-color;
+          width: 2rem;
+          height: 2rem;
+          border-radius: 50%;
+
+          &:active {
+            background-color: $primary-color;
+          }
+        }
+      }
+    }
+
+    .input-p {
+      font-size: 1.7rem;
+      font-weight: 500;
+      margin: 0 1rem;
+      color: $font-gray-light;
+    }
+
+    input {
+      border: 1px solid $border-color;
+      border-radius: 1rem;
+      width: 32rem;
+      height: 5rem;
+      padding: 0 1rem;
+      margin: 1rem 0;
+
+      &::placeholder {
+        font-family: Tajawal;
+        font-size: 1.5rem;
+        font-weight: 400;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}

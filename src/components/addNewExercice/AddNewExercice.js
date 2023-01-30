@@ -6,11 +6,15 @@ import mobileview from "../../assets/icons/mobile-view.png";
 import webView from "../../assets/icons/web-view.png";
 import Type from "../../assets/icons/type.png";
 
-import ExerciceCard from "../exerciceCard/ExerciceCard";
+import ExerciceTitleCard from "../exerciceTitleCard/ExerciceTitleCard";
 import Button from "../../components/button/Button";
+import ExerciceImage from "../../components/exercices/exercice-image/ExerciceImage";
 
 import "./AddNewExercice.scss";
 import { questionsItems } from "../../data";
+import ExerciceQuestion from "../exercices/exercice-question/ExerciceQuestion";
+import ExerciceVideo from "../exercices/exercice-video/ExerciceVideo";
+import ExerciceWrongRight from "../exercices/exercice-wrong-right/ExerciceWrongRight";
 
 const AddNewExercice = () => {
   return (
@@ -28,13 +32,7 @@ const AddNewExercice = () => {
         </div>
         <div className="exercice-cards">
           {questionsItems.map((question, index) => {
-            return (
-              <ExerciceCard
-                key={index}
-                qestion={question}
-                displayButton={false}
-              />
-            );
+            return <ExerciceTitleCard key={index} qestion={question} />;
           })}
         </div>
       </div>
@@ -68,6 +66,12 @@ const AddNewExercice = () => {
 
       <div className="regulations">
         <p className="title">ضوابط</p>
+        <div className="exercices">
+          <ExerciceQuestion />
+          <ExerciceImage />
+          <ExerciceVideo />
+          <ExerciceWrongRight />
+        </div>
       </div>
     </section>
   );

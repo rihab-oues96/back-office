@@ -155,5 +155,11 @@
       font-weight: 700;
       margin-bottom: 3rem;
     }
+
+    .exercices {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
   }
 }

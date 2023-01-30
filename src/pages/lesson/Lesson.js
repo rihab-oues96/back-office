@@ -35,11 +35,7 @@ const Lesson = () => {
                 <tr>
                   <th className="index">#0{index + 1}</th>
                   <th>
-                    <ExerciceCard
-                      key={index}
-                      qestion={exercice}
-                      displayButton={true}
-                    />
+                    <ExerciceCard key={index} qestion={exercice} />
                   </th>
                 </tr>
               </table>
