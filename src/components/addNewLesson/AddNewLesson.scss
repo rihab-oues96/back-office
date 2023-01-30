@@ -38,10 +38,17 @@
       height: 8rem;
       border-radius: 50%;
       cursor: pointer;
+
+      input {
+        display: none;
+      }
     }
 
     .import-file {
       margin-right: 2rem;
+      input {
+        display: none;
+      }
 
       .btn-file {
         display: flex;

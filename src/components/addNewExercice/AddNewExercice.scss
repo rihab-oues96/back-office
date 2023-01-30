@@ -159,6 +159,8 @@
     .exercices {
       display: flex;
       flex-direction: column;
+      overflow-y: scroll;
+      height: 65rem;
       gap: 2rem;
     }
   }

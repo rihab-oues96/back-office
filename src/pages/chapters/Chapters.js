@@ -2,13 +2,14 @@ import React from "react";
 import Button from "../../components/button/Button";
 import ChapterCard from "../../components/chapterCard/ChapterCard";
 import Modal from "../../components/modal/Modal";
-import { chapters } from "../../data";
+// import { chapters } from "../../data";
 import { useSelector } from "react-redux";
 
 import "./Chapters.scss";
 
 const Chapters = () => {
   const { isOpenModal } = useSelector((store) => store.modal);
+  const { chapters } = useSelector((state) => state.chapter);
 
   return (
     <section className="chapters">
@@ -20,6 +21,7 @@ const Chapters = () => {
 
       <div className="chapters-cards">
         {chapters.map((chapter, index) => {
+          console.log(chapters);
           return <ChapterCard chapter={chapter} key={index} />;
         })}
       </div>

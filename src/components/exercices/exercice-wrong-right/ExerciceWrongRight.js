@@ -13,7 +13,7 @@ const ExerciceWrongRight = () => {
 
       <div className="dash"></div>
       <div className="wrong-right-content">
-        <p>الإجابة الملائمة (للفيديو, للصورة...)</p>
+        <p className="question-p">الإجابة الملائمة (للفيديو, للصورة...)</p>
         <ul>
           <li>
             <div className="circle"></div> صحيح

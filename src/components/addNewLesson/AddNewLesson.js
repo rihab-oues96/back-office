@@ -20,10 +20,16 @@ const AddNewLesson = () => {
 
       <div className="imports">
         <div className="import-img">
-          <img src={plus} alt="icon-plus" />
+          <label for="inputImg">
+            <img src={plus} alt="icon-plus" />
+          </label>
+          <input type="file" id="inputImg" accept="image/png,image/jpeg" />
         </div>
         <div className="import-file">
-          <div className="btn-file">اختر ملف </div>
+          <label className="btn-file" for="inputFile">
+            اختر ملف
+          </label>
+          <input type="file" id="inputFile" />
         </div>
       </div>
 

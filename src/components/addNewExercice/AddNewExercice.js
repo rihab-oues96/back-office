@@ -10,13 +10,19 @@ import ExerciceTitleCard from "../exerciceTitleCard/ExerciceTitleCard";
 import Button from "../../components/button/Button";
 import ExerciceImage from "../../components/exercices/exercice-image/ExerciceImage";
 
-import "./AddNewExercice.scss";
 import { questionsItems } from "../../data";
 import ExerciceQuestion from "../exercices/exercice-question/ExerciceQuestion";
 import ExerciceVideo from "../exercices/exercice-video/ExerciceVideo";
 import ExerciceWrongRight from "../exercices/exercice-wrong-right/ExerciceWrongRight";
+import ExerciceText from "../exercices/exercice-text/ExerciceText";
+import ExerciceDescription from "../exercices/exercice-description/ExerciceDescription";
+
+import "./AddNewExercice.scss";
+import { useSelector } from "react-redux";
 
 const AddNewExercice = () => {
+  const { name } = useSelector((store) => store.selectExercice);
+
   return (
     <section className="new-exercice">
       <div className="choice">
@@ -32,7 +38,7 @@ const AddNewExercice = () => {
         </div>
         <div className="exercice-cards">
           {questionsItems.map((question, index) => {
-            return <ExerciceTitleCard key={index} qestion={question} />;
+            return <ExerciceTitleCard key={index} question={question} />;
           })}
         </div>
       </div>
@@ -67,10 +73,15 @@ const AddNewExercice = () => {
       <div className="regulations">
         <p className="title">ضوابط</p>
         <div className="exercices">
-          <ExerciceQuestion />
-          <ExerciceImage />
+          {name === "exerciceAdvice" && <ExerciceQuestion />}
+          {name === "exerciceDescription" && <ExerciceDescription />}
+          {name === "exerciceText" && <ExerciceText />}
+
+          {/* <ExerciceImage />
           <ExerciceVideo />
           <ExerciceWrongRight />
+        
+           */}
         </div>
       </div>
     </section>

@@ -30,40 +30,48 @@ import text from "./assets/icons/text.png";
 import Type from "./assets/icons/type.png";
 import video from "./assets/icons/video.png";
 
+import { v4 as uuidv4 } from "uuid";
 
 export const chapters = [
   {
+    id: uuidv4(),
     image: im1,
     title: "London Central",
     description: "تعلم الإنكليزية مع هذه الدراما التلفزيونية المسلية",
   },
   {
+    id: uuidv4(),
     image: im2,
     title: "أكملْ دورة اللغة الإنجليزية",
     description: "دروس لمستويات المُبتدئ، والمُتوسط، والمُتقدِّم",
   },
   {
+    id: uuidv4(),
     image: im3,
     title: " نطق اللغة الإنكليزيّة ",
     description: " طوّرْ مهاراتك وتحدّثْ بمزيدٍ من الثقة ",
   },
   {
+    id: uuidv4(),
     image: im4,
     title: " العالم باللغةِ الإنكليزيّة",
     description:
       "تعلّمْ اللغة الإنكليزيّة بفضلِ فيديوهات من 'The New York Times'",
   },
   {
+    id: uuidv4(),
     image: im5,
     title: " أكملْ دورة اللغة الإنجليزية ",
     description: "تعلّم مُفردات وعبارات مُهمّة لأجلِ رحلتك",
   },
   {
+    id: uuidv4(),
     image: im6,
     title: "اللغة الإنجليزية لِلأعمال التجاريّة",
     description: " أتقنْ أساسيّات اللُغة الخاصّة بالعمل اللغة الإنجليزية ",
   },
   {
+    id: uuidv4(),
     image: im7,
     title: "The Economist ",
     description: " تعلّمْ الإنكليزيّة بفضلِ صحيفة The Economist",
@@ -118,36 +126,43 @@ export const exercices = [
 
 export const questionsItems = [
   {
+    name: "exerciceAdvice",
     image: advice,
     title: "النصيحة",
     description: "ضع حاوية الصورة",
   },
   {
+    name: "exerciceDescription",
     image: description,
     title: "وصف",
     description: "ضع حاوية الصورة",
   },
   {
+    name: "exerciceDialogue",
     image: dialogue,
     title: "حوار",
     description: "ضع حاوية الصورة",
   },
   {
+    name: "exerciceImage",
     image: image,
     title: "صورة",
     description: "ضع حاوية الصورة",
   },
   {
+    name: "exerciceLinkCards",
     image: linkCards,
     title: "توصيل البطاقات",
     description: "ضع حاوية الصورة",
   },
   {
+    name: "exerciceQuestionCheck",
     image: menu,
     title: "التأكيد الصحيح",
     description: "ضع حاوية الصورة",
   },
   {
+    name: "exerciceQuestion",
     image: question,
     title: "سؤال",
     description: "ضع حاوية الصورة",
@@ -158,26 +173,31 @@ export const questionsItems = [
     description: "ضع حاوية الصورة",
   },
   {
+    name: "exerciceWrongRight",
     image: rightWord,
     title: "الكلمة الصحيح",
     description: "ضع حاوية الصورة",
   },
   {
+    name: "exerciceVoice",
     image: sound,
     title: "صوت",
     description: "ضع حاوية الصورة",
   },
   {
+    name: "exerciceText",
     image: text,
     title: "نص",
     description: "ضع حاوية الصورة",
   },
   {
+    name: "exerciceAddAnswer",
     image: Type,
     title: "املا الفراغ",
     description: "ضع حاوية الصورة",
   },
   {
+    name: "exerciceVideo",
     image: video,
     title: "فيديو",
     description: "ضع حاوية الصورة",

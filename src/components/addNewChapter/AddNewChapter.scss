@@ -38,6 +38,10 @@
       height: 8rem;
       border-radius: 50%;
       cursor: pointer;
+
+      input {
+        display: none;
+      }
     }
 
     .import-file {
@@ -53,6 +57,10 @@
         width: 15rem;
         height: 4rem;
         cursor: pointer;
+      }
+
+      input {
+        display: none;
       }
     }
   }
