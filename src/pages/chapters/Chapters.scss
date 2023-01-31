@@ -27,3 +27,13 @@
     padding-top: 3rem;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .chapters {
+    padding-left: 0;
+    .heading {
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+  }
+}

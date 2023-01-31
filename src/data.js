@@ -135,13 +135,19 @@ export const exercices = [
 export const questionsItems = [
   {
     id: uuidv4(),
+    name: "exerciceQuestion",
+    image: question,
+    title: "سؤال",
+    description: "ضع حاوية الصورة",
+  },
+  {
+    id: uuidv4(),
     name: "exerciceAdvice",
     image: advice,
     title: "النصيحة",
     description: "ضع حاوية الصورة",
   },
   {
-    id: uuidv4(),
     id: uuidv4(),
     name: "exerciceDescription",
     image: description,
@@ -174,13 +180,6 @@ export const questionsItems = [
     name: "exerciceQuestionCheck",
     image: menu,
     title: "التأكيد الصحيح",
-    description: "ضع حاوية الصورة",
-  },
-  {
-    id: uuidv4(),
-    name: "exerciceQuestion",
-    image: question,
-    title: "سؤال",
     description: "ضع حاوية الصورة",
   },
   {

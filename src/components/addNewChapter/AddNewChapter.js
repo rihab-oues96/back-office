@@ -50,6 +50,7 @@ const AddNewChapter = () => {
             type="file"
             id="inputImg"
             accept="image/png,image/jpeg"
+            
             onChange={(e) => {
               if (e.target.files && e.target.files[0])
                 setChapter({

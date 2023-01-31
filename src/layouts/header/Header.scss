@@ -9,14 +9,19 @@
   justify-content: center;
   border-bottom: 1px solid $border-color;
 
+  .menu-icon {
+    display: none;
+  }
+
   .search {
     display: flex;
     flex-direction: row;
     align-items: center;
     background: $background-gray;
-    width: 62rem;
+    width: 60rem;
     height: 4.5rem;
     border-radius: 1rem;
+
     img {
       margin-right: 1rem;
       width: 2.5rem;
@@ -27,7 +32,7 @@
       background: $background-gray;
       border: none;
       margin-right: 1rem;
-      width: 80%;
+      width: 90%;
 
       &::placeholder {
         font-family: Tajawal;
@@ -62,6 +67,41 @@
 
     .icon {
       margin-right: 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .header {
+    justify-content: flex-start;
+    .search {
+      margin-right: 1rem;
+      width: 50rem;
+    }
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .header {
+    .search {
+      width: 40rem;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    width: 100vw;
+    .menu-icon {
+      margin-right: 1rem;
+      display: initial;
+    }
+    .search {
+      width: 50rem;
+      margin-left: 1rem;
+    }
+    .user {
+      display: none;
     }
   }
 }

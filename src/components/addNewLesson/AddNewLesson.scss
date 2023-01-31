@@ -39,6 +39,12 @@
       border-radius: 50%;
       cursor: pointer;
 
+      .plus {
+        width: 8rem;
+        height: 8rem;
+        border-radius: 50%;
+      }
+
       input {
         display: none;
       }
@@ -85,8 +91,17 @@
 
     .btns {
       display: flex;
+      flex-wrap: wrap;
       flex-direction: row;
       gap: 1rem;
     }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .add-lesson {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
   }
 }

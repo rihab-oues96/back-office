@@ -6,9 +6,9 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  cursor: pointer;
   border-radius: 0.5rem;
   margin-bottom: 2rem;
-  width: 148rem;
   height: 10rem;
 
   .card-right {
@@ -18,8 +18,16 @@
     padding-right: 2rem;
     gap: 1.5rem;
 
+    .image {
+      img {
+        width: 6rem;
+        height: 6rem;
+        border-radius: 50%;
+      }
+    }
     .about-lesson {
       text-align: right;
+      width: 45rem;
 
       .title {
         color: $primary-color;
@@ -31,6 +39,52 @@
         font-size: 1.5rem;
         font-weight: 400;
       }
+    }
+  }
+  .card-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .icon-close {
+      filter: invert(16%) sepia(54%) saturate(7433%) hue-rotate(356deg)
+        brightness(109%) contrast(100%);
+      opacity: 0.6;
+      cursor: pointer;
+      width: 2rem;
+      margin-left: 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .lesson-card {
+    .card-right {
+      .about-lesson {
+        width: 30rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .lesson-card {
+    .card-right {
+      .about-lesson {
+        width: 20rem;
+        .title {
+          margin-bottom: 0.5rem;
+          font-size: 1.5rem;
+          font-weight: 600;
+        }
+        .description {
+          font-size: 1.25rem;
+          font-weight: 400;
+        }
+      }
+    }
+    .card-left {
+      display: none;
     }
   }
 }

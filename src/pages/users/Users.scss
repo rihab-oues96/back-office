@@ -1,0 +1,31 @@
+@import "../../main.scss";
+
+.users {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 85vw;
+  padding: 4rem;
+  gap: 2rem;
+
+  .user {
+    width: 25rem;
+    height: 15rem;
+    border: 1px solid $border-color;
+    border-radius: 1rem;
+    padding: 1rem;
+
+    img {
+      width: 8rem;
+      border-radius: 50%;
+    }
+
+    .login {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: $primary-color;
+    }
+  }
+}

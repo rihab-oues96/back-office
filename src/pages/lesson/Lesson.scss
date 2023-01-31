@@ -4,11 +4,13 @@
   display: flex;
   flex-direction: column;
   padding: 4rem;
+  width: 85vw;
 
   .heading {
     width: 100%;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
     flex-direction: row;
 
@@ -25,6 +27,8 @@
     .btns {
       display: flex;
       flex-direction: row;
+      flex-wrap: wrap;
+      gap: 1rem;
     }
   }
 
@@ -48,7 +52,6 @@
 
       .index {
         font-size: 2.5rem;
-        padding-left: 3rem;
         font-weight: 500;
       }
     }

@@ -9,19 +9,21 @@
   .heading {
     width: 100%;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    flex-direction: row;
 
     .title {
       font-size: 2.5rem;
       font-weight: 700;
-      margin-top: 3rem;
     }
 
     .btns {
       display: flex;
       flex-direction: row;
+      flex-wrap: wrap;
+      gap: 1rem;
     }
   }
 
@@ -41,8 +43,51 @@
 
       .index {
         font-size: 2.5rem;
-        padding-left: 3rem;
         font-weight: 500;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 885px) {
+  .lessons {
+    .heading {
+      .title {
+        margin: 2rem 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .lessons {
+    padding: 2rem;
+    .heading {
+      .title {
+        font-size: 2rem;
+        font-weight: 700;
+      }
+    }
+    .lessons-content {
+      margin-top: 4rem;
+
+      .lessons-cards {
+        .lesson-title {
+          font-size: 1.5rem;
+          margin-right: 4rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 394px) {
+  .lessons {
+    .lessons-content {
+      .lessons-cards {
+        .index {
+          display: none;
+        }
       }
     }
   }

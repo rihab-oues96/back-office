@@ -10,7 +10,7 @@
 
   .head {
     margin: 3rem 0;
-    
+
     .logo {
       display: flex;
       flex-direction: column;
@@ -75,4 +75,20 @@
       }
     }
   }
+}
+
+@media screen and (max-width: 1024px) {
+  .sidebar {
+    .navigation {
+      p {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+.sidebar{
+  display: none;
+}
 }

@@ -10,9 +10,12 @@ import { closeModal } from "../../features/modal/ModalSlice";
 
 import "./AddNewLesson.scss";
 import { addLesson } from "../../features/lesson/LessonSlice";
+import { useParams } from "react-router-dom";
 
 const AddNewLesson = () => {
   const dispatch = useDispatch();
+
+ 
 
   const [lesson, setLesson] = useState({
     id: "",
@@ -41,19 +44,24 @@ const AddNewLesson = () => {
 
       <div className="imports">
         <div className="import-img">
-          <label for="inputImg">
-            <img src={plus} alt="icon-plus" />
+          <label htmlFor="inputImg">
+            <img src={lesson.image || plus} alt="icon-plus" className="plus" />
           </label>
           <input
             type="file"
             id="inputImg"
             accept="image/png,image/jpeg"
-            value={lesson.image}
-            onChange={(e) => setLesson({ ...lesson, image: e.target.value })}
+            onChange={(e) => {
+              if (e.target.files && e.target.files[0])
+                setLesson({
+                  ...lesson,
+                  image: URL.createObjectURL(e.target.files[0]),
+                });
+            }}
           />
         </div>
         <div className="import-file">
-          <label className="btn-file" for="inputFile">
+          <label className="btn-file" htmlFor="inputFile">
             اختر ملف
           </label>
           <input type="file" id="inputFile" />

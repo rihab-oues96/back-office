@@ -12,8 +12,16 @@ const lessonSlice = createSlice({
     addLesson: (state, action) => {
       state.lessons = [...state.lessons, action.payload];
     },
+
+    deleteLesson: (state, action) => {
+      state.lessons = state.lessons.filter(
+        ({ id }) => id !== action.payload.id
+      );
+    },
+
+
   },
 });
 
-export const { addLesson } = lessonSlice.actions;
+export const { addLesson, deleteLesson } = lessonSlice.actions;
 export default lessonSlice.reducer;
