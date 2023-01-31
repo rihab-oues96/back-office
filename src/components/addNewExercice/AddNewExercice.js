@@ -19,6 +19,7 @@ import ExerciceDescription from "../exercices/exercice-description/ExerciceDescr
 
 import "./AddNewExercice.scss";
 import { useSelector } from "react-redux";
+import ExerciceLinkCards from "../exercices/exercice-link-cards/ExerciceLinkCards";
 
 const AddNewExercice = () => {
   const { name } = useSelector((store) => store.selectExercice);
@@ -79,6 +80,7 @@ const AddNewExercice = () => {
           {name === "exerciceImage" && <ExerciceImage />}
           {name === "exerciceVideo" && <ExerciceVideo />}
           {name === "exerciceWrongRight" && <ExerciceWrongRight />}
+          {name === "exerciceLinkCards" && <ExerciceLinkCards />}
         </div>
       </div>
     </section>

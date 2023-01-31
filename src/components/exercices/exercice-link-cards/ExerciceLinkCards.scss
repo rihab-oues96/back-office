@@ -1,0 +1,50 @@
+@import "../../../main.scss";
+
+.ex-link-cards {
+  .link-cards-heading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    p {
+      font-size: 1.8rem;
+      font-weight: 500;
+      margin: 0 1rem;
+      color: $font-gray-light;
+    }
+  }
+
+  .first-element {
+    margin-bottom: 2rem;
+  }
+
+  .content {
+    p {
+      font-size: 1.5rem;
+    }
+    input {
+      border: 1px solid $border-color;
+      border-radius: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row;
+      width: 34rem;
+      height: 5rem;
+      padding: 0 1rem;
+      margin: 1rem 0;
+
+      &[type="text"] {
+        &::placeholder {
+          font-family: Tajawal;
+          font-size: 1.5rem;
+          font-weight: 400;
+        }
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+}
